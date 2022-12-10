@@ -2,9 +2,11 @@ function IsLightModePreffered() {
     return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
 }
 
-if (IsLightModePreffered()) {
- ui("mode","light"); 
-  return;
-}
+function SetPrefferedMode() {
+    if (IsLightModePreffered()) {
+        ui("mode","light"); 
+        return;
+    }
 
-ui("mode","light"); 
+    ui("mode","light"); 
+}
