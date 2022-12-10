@@ -8,5 +8,5 @@ function SetPrefferedMode() {
         return;
     }
 
-    ui("mode","light"); 
+    ui("mode","dark"); 
 }
